@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
     <div
-      className="mt-28"
-      style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr 1fr 0.5fr" }}
+      className="mt-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
+      //   style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr 1fr 0.5fr" }}
     >
-      <div className="">
+      <div className="border-[#303236] border-b md:border-r md:border-b-0">
         <h1 className="text-2xl mb-10">Lilbro</h1>
         <ul>
           <li className="mb-2 text-lg">123-456-7890</li>
@@ -13,7 +13,10 @@ export default function Footer() {
           <li className="mb-2 text-lg">San Francisco, CA 94158</li>
         </ul>
       </div>
-      <div style={{ display: "grid", gridTemplateRows: "1fr 1fr 1fr 1fr 1fr" }}>
+      <div
+        className="grid grid-rows-5 border-[#303236] border-b md:border-r md:border-b-0 pb-3"
+        //   style={{ display: "grid", gridTemplateRows: "1fr 1fr 1fr 1fr 1fr" }}
+      >
         <p className="">Solutions</p>
         <p className="">Visions</p>
         <p className="">Programs</p>
@@ -24,12 +27,12 @@ export default function Footer() {
           </button>
         </div>
       </div>
-      <div>
+      <div className="border-[#303236] border-b md:border-r md:border-b-0 pb-3">
         <p className="mb-5">Subscribe to lilbro</p>
         <form action="">
           <div className="text-sm mb-3">Email</div>
           <input
-            className="p-4 h-[50px] rounded w-[75%] border-[#303236] bg-inherit"
+            className="p-4 h-[50px] rounded w-[90%] border-[#303236] bg-inherit"
             type="text"
           />
           <div>
@@ -39,11 +42,11 @@ export default function Footer() {
           </div>
         </form>
       </div>
-      <div className="">
-        <p className="">Follow us on</p>
+      <div className="border-[#303236] md:border-r md:border-b-0 lg:border-r-0">
+        <p className="pb-5">Follow us on</p>
         <div
-          className=""
-          style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}
+          className="grid grid-cols-3"
+          //   style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}
         >
           <button>
             <svg
