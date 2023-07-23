@@ -2,8 +2,6 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./Hero";
 import Main from "./components/Main";
 
 const queryClient = new QueryClient({
