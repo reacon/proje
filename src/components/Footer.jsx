@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <div
       className="mt-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
-      //   style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr 1fr 0.5fr" }}
+      //   style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr 1fr 0.5fr" }} tesst
     >
       <div className="border-[#303236] border-b md:border-r md:border-b-0">
         <h1 className="text-2xl mb-10">Lilbro</h1>
