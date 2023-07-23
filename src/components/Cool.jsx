@@ -1,7 +1,7 @@
 const Cool = () => {
   return (
-    <div className="flex flex-auto relative border border-red-500 mt-12">
-      <div className="border border-green-500 m-16 w-1/4">
+    <div className="flex flex-auto relative mt-12 border border-[#303236]">
+      <div className=" m-14 w-1/4 ">
         <h1 className="text-4xl block">
           Let Your Data Take Your Business to Higher Grounds
         </h1>
@@ -15,7 +15,7 @@ const Cool = () => {
           </p>
         </div>
       </div>
-      <div className="border border-blue-500 w-3/4 m-16">
+      <div className="w-3/4 m-16 ">
         <div>
           <img className="pb-3" src="blonland" alt="ganju"></img>
           <p>Cloud Analytics Modernization</p>
