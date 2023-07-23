@@ -14,8 +14,8 @@ const Main = () => {
       <div></div>
       <div>
         <Hero />
-        {/* <Cool /> */}
-        {/* <Last /> */}
+        <Cool />
+        <Last />
         <Footer />
       </div>
     </div>
