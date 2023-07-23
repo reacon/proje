@@ -3,18 +3,24 @@
 @tailwind utilities;
 
 @layer base {
-    body{
-        font-family:"Comic Sans MS"
-    }
+  body {
+    font-family: "Poppins";
+    background-color: #141416;
+    color: #949494;
+    /* border-color: #949494; */
+  }
+  h1 {
+    color: white;
+  }
 }
-@layer components{
-    .search-input{
-        @apply w-60 mb-5 block;
-    }
+@layer components {
+  .search-input {
+    @apply w-60 mb-5 block;
+  }
 }
 
-@layer utilities{
-    .grayed-out-disabled{
-        @apply disabled:opacity-50
-    }
+@layer utilities {
+  .grayed-out-disabled {
+    @apply disabled:opacity-50;
+  }
 }

@@ -1,0 +1,8 @@
+.layout {
+  display: grid;
+  grid-template-areas: "navbar navbar navbar", "side content side",
+    "footer footer footer";
+  grid-template-columns: .5fr 9fr .5fr;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
