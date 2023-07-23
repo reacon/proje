@@ -2,7 +2,8 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Cool from "./Cool";
 import styles from "../styles/Layout.module.css";
-import Last from "./last";
+import Last from "./Last";
+import Footer from "./Footer";
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
         <Hero />
         <Cool />
         <Last />
+        <Footer />
       </div>
     </div>
   );
