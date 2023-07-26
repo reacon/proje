@@ -5,22 +5,13 @@ import styles from "../styles/Layout.module.css";
 import Last from "../components/Last";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
+import Layout from "../components/Layout";
 
 const Main = () => {
   return (
-    <div className={styles.layout}>
-      <div></div>
-      <Navbar />
-      <div></div>
-      <div></div>
-      <div>
-        {/* <Hero /> */}
-        {/* <Cool /> */}
-        {/* <Last /> */}
-        <Card />
-        <Footer />
-      </div>
-    </div>
+    <Layout>
+      <Card />
+    </Layout>
   );
 };
 export default Main;
