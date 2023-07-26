@@ -1,9 +1,10 @@
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import Cool from "./Cool";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import Cool from "../components/Cool";
 import styles from "../styles/Layout.module.css";
-import Last from "./Last";
-import Footer from "./Footer";
+import Last from "../components/Last";
+import Footer from "../components/Footer";
+import Card from "../components/Card";
 
 const Main = () => {
   return (
@@ -13,9 +14,10 @@ const Main = () => {
       <div></div>
       <div></div>
       <div>
-        <Hero />
+        {/* <Hero /> */}
         {/* <Cool /> */}
         {/* <Last /> */}
+        <Card />
         <Footer />
       </div>
     </div>
