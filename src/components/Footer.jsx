@@ -2,9 +2,9 @@ export default function Footer() {
   return (
     <div
       className="mt-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
-      //   style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr 1fr 0.5fr" }}
+      //   style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr 1fr 0.5fr" }} tesst
     >
-      <div className="border-[#303236] border-b md:border-r md:border-b-0">
+      <div className="border-[#303236] border-b md:border-r md:border-b-0 pb-10">
         <h1 className="text-2xl mb-10">Lilbro</h1>
         <ul>
           <li className="mb-2 text-lg">123-456-7890</li>
@@ -14,7 +14,7 @@ export default function Footer() {
         </ul>
       </div>
       <div
-        className="grid grid-rows-5 border-[#303236] border-b md:border-r md:border-b-0 pb-3"
+        className="grid grid-rows-5 border-[#303236] border-b md:border-r md:border-b-0 pb-12"
         //   style={{ display: "grid", gridTemplateRows: "1fr 1fr 1fr 1fr 1fr" }}
       >
         <p className="">Solutions</p>
@@ -27,13 +27,14 @@ export default function Footer() {
           </button>
         </div>
       </div>
-      <div className="border-[#303236] border-b md:border-r md:border-b-0 pb-3">
+      <div className="border-[#303236] border-b md:border-r md:border-b-0 pb-12">
         <p className="mb-5">Subscribe to lilbro</p>
         <form action="">
           <div className="text-sm mb-3">Email</div>
           <input
-            className="p-4 h-[50px] rounded w-[90%] border-[#303236] bg-inherit"
+            className="p-4 h-[50px] rounded w-[90%] border-[#303236] bg-inherit focus:border"
             type="text"
+            style={{}}
           />
           <div>
             <button className="mt-5 p-3 pr-7 pl-7 w-auto rounded bg-[#FE6261] text-black font-thin">
