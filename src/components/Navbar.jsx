@@ -7,7 +7,7 @@ const Navbar = () => {
         WIX
       </Link>
       <div className="flex flex-row justify-between">
-        <Link className="pb-2 pl-2 pr-2">
+        <Link className="pb-2 pl-2 pr-2" to="/Solutions">
           <button>solutions</button>
         </Link>
         <Link className="pb-2 pl-2 pr-2">

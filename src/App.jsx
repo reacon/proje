@@ -2,7 +2,8 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState } from "react";
-import Main from "./components/Main";
+import Main from "./pages/Main";
+import Solutions from "./pages/Solutions";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -20,6 +21,7 @@ const App = () => {
         <QueryClientProvider client={queryClient}>
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/Solutions" element={<Solutions />} />
           </Routes>
         </QueryClientProvider>
       </BrowserRouter>
