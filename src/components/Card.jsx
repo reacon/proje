@@ -12,7 +12,7 @@ export default function Card() {
           alt=""
         />
       </div>
-      <div className="min-w-[400px] m-28 whitespace-pre-wrap">
+      <div className="min-w-[300px] m-28 ">
         <div className="">
           <p className="text-md mb-[10%]">
             I'm a paragraph. Click here to add your own text and edit me. It’s
