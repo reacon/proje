@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero";
 import Cool from "../components/Cool";
 import styles from "../styles/Layout.module.css";

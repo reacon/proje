@@ -5,11 +5,11 @@ import { useState } from "react";
 export default function Navbar(props) {
   const data = [
     {
-      title: "Solution",
-      leadsto: "/",
+      title: "Solutions",
+      leadsto: "/Solutions",
     },
     {
-      title: "Vision",
+      title: "Visions",
       leadsto: "/",
     },
     {
@@ -29,11 +29,11 @@ export default function Navbar(props) {
       leadsto: "/",
     },
   ];
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   function handleClick() {
     if (toggle) {
-      document.getElementById("menu").setAttribute("class", "absolute shadow-2xl bg-[#FE6261] top-[50px] p-6 rounded right-0")
+      document.getElementById("menu").setAttribute("class", "w-[300px] absolute drop-shadow-lg bg-[#FE6261] top-[50px] p-6 rounded right-0 z-[99]")
     } else {
       document.getElementById("menu").setAttribute("class", "hidden")
     }
@@ -42,7 +42,7 @@ export default function Navbar(props) {
   }
 
   return (
-    <div className="flex justify-between w-full">
+    <div className="flex justify-between w-full mb-4">
       <Link className="text-xl" to="/">
         WIX
       </Link>
