@@ -10,9 +10,7 @@ const Navbar = () => {
   };
 
   const handleOptions = (e) => {
-    if (!dropdown.current.classList.contains(e.target)) {
-      dropdown.current.classList.remove("show");
-    }
+    dropdown.current.classList.remove("show");
   };
 
   return (
