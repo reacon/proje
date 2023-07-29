@@ -3,24 +3,47 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    font-family: "Poppins";
-    background-color: #141416;
-    color: #949494;
-    /* border-color: #949494; */
-  }
-  h1 {
-    color: white;
-  }
+    body {
+            font-family: "Poppins";
+            background-color: #141416;
+            color: #949494;
+            /* border-color: #949494; */
+        }
 }
-@layer components {
-  .search-input {
-    @apply w-60 mb-5 block;
-  }
+@layer components{
+    .search-input{
+        @apply w-60 mb-5 block;
+    }
 }
 
-@layer utilities {
-  .grayed-out-disabled {
-    @apply disabled:opacity-50;
-  }
+@layer utilities{
+    .grayed-out-disabled{
+        @apply disabled:opacity-50
+    }
+}
+
+
+.visuallyhidden{
+    opacity:0
+}
+
+.dropdown{
+    position:fixed;
+    z-index: 2;
+    margin-top: 5;
+    margin-right: 7;
+    display: block;
+    right: 10px;
+   
+    transition: opacity 0.7s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    
+    
+
+}
+
+.dropdown.show{
+    opacity:1;
+    pointer-events: auto;
 }
