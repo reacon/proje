@@ -1,16 +1,49 @@
 import { Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const Navbar = () => {
   const dropdown = useRef();
 
   const handlenavClick = () => {
-    dropdown.current.classList.toggle("show");
+    if (dropdown.current.classList.contains("visuallyhidden")) {
+      dropdown.current.classList.remove("hidden");
+      setTimeout(function () {
+        dropdown.current.classList.remove("visuallyhidden");
+      }, 20);
+    } else {
+      dropdown.current.classList.add("visuallyhidden");
+
+      dropdown.current.addEventListener(
+        "transtionend",
+        function () {
+          dropdown.current.classList.add("hidden");
+        },
+        {
+          capture: false,
+          once: true,
+          passive: false,
+        }
+      );
+    }
   };
 
-  const handleOptions = (e) => {
-    dropdown.current.classList.remove("show");
+  const handleOptions = () => {
+    if (!dropdown.current.classList.contains("visuallyhidden")) {
+      dropdown.current.classList.add("visuallyhidden");
+
+      dropdown.current.addEventListener(
+        "transtionend",
+        function () {
+          dropdown.current.classList.add("hidden");
+        },
+        {
+          capture: false,
+          once: true,
+          passive: false,
+        }
+      );
+    }
   };
 
   return (
@@ -27,11 +60,14 @@ const Navbar = () => {
         </button>
       </Link>
 
-      <button onClick={handlenavClick} className="fixed  right-0 top-10">
+      <button onClick={handlenavClick} className="fixed right-0 top-10">
         button1
       </button>
 
-      <div className="   dropdown  mt-8 mr-12  " ref={dropdown}>
+      <div
+        className=" dropdown  hidden visuallyhidden mt-8 mr-12  "
+        ref={dropdown}
+      >
         <Link className="m-5" onClick={handleOptions}>
           <button>solutions</button>
         </Link>
